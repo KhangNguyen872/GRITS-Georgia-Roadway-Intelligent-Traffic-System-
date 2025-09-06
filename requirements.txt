@@ -1,0 +1,19 @@
+# Core ML/runtime (matches the trained model)
+scikit-learn~=1.6.1
+pandas~=2.2
+numpy~=2.0
+joblib~=1.4
+
+# Live data collection (NWS + 511)
+requests~=2.32
+python-dotenv~=1.0
+
+# Optional: plots (feature importance, quick charts)
+matplotlib~=3.9
+
+# --- Optional future models (leave commented for now) ---
+# lightgbm~=4.5
+# catboost~=1.2
+# torch~=2.4            # CPU-only install; consider platform wheels
+# pytorch-forecasting~=1.0
+# optuna~=3.6

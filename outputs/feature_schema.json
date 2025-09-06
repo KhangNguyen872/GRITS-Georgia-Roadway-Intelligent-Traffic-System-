@@ -1,0 +1,20 @@
+{
+  "numeric_features": [
+    "LAT",
+    "LON",
+    "AADT_MEAN_3YR",
+    "AADT_STD_3YR",
+    "AADT_TREND_SLOPE",
+    "TRUCK_PCT_MEAN",
+    "TRUCK_PCT_LATEST",
+    "KFACTOR",
+    "DFACTOR"
+  ],
+  "categorical_features": [
+    "FUNCTIONAL_CLASS",
+    "STATION_TYPE"
+  ],
+  "label": "HIGH_CONGESTION_PROXY",
+  "label_definition": "1 if AADT_2024 >= 75th percentile; else 0",
+  "latest_year": 2024
+}
