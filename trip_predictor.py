@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-# trip_predictor.py — GBT prototype + optional live bumps (NWS/511, single-CSV mode)
-import argparse, json, math, datetime as dt
+# trip_predictor.py — GBT prototype + optional live bumps + optional route polyline
+import argparse, json, math, os, datetime as dt
 from pathlib import Path
 import numpy as np, pandas as pd, joblib
-
+import requests
+from typing import List, Tuple, Dict, Any, Literal
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE / "data"
@@ -125,7 +126,7 @@ def apply_live_bumps(p_base, leave_in_min):
     except Exception:
         pass
 
-    # 511 events
+    # 511 events (coarse bump)
     try:
         if GA511_EVENTS_CSV.exists():
             ev = pd.read_csv(GA511_EVENTS_CSV)
@@ -144,6 +145,109 @@ def apply_live_bumps(p_base, leave_in_min):
     details["prob_after_live"]  = round(p,4)
     return p, details
 
+# ---------- Polyline encoding ----------
+def encode_polyline(coords: List[Tuple[float, float]]) -> str:
+    result = []
+    prev_lat = 0
+    prev_lng = 0
+    for lat, lng in coords:
+        lat = int(round(lat * 1e5))
+        lng = int(round(lng * 1e5))
+        dlat = lat - prev_lat
+        dlng = lng - prev_lng
+        for v in (dlat, dlng):
+            v = ~(v << 1) if v < 0 else (v << 1)
+            while v >= 0x20:
+                result.append(chr((0x20 | (v & 0x1f)) + 63))
+                v >>= 5
+            result.append(chr(v + 63))
+        prev_lat, prev_lng = lat, lng
+    return "".join(result)
+
+# ---------- Routing helpers ----------
+def route_via_geoapify(olat, olon, dlat, dlon, mode="drive"):
+    key = os.getenv("GEOAPIFY_KEY", "").strip()
+    if not key:
+        return False, {"error": "GEOAPIFY_KEY not set", "provider": "geoapify"}
+    url = ("https://api.geoapify.com/v1/routing"
+           f"?waypoints={olat},{olon}|{dlat},{dlon}&mode={mode}&apiKey={key}")
+    try:
+        r = requests.get(url, timeout=20); r.raise_for_status()
+        gj = r.json()
+        feat = (gj.get("features") or [None])[0]
+        if not feat: return False, {"error": "no features", "provider": "geoapify"}
+        geom = feat.get("geometry", {}); props = feat.get("properties", {})
+        coords_lonlat = geom.get("coordinates")
+        # LineString => [[lon,lat],...]; MultiLineString => [[[lon,lat],...], ...]
+        if coords_lonlat and isinstance(coords_lonlat[0][0], (int, float)):
+            line = coords_lonlat
+        else:
+            line = (coords_lonlat or [[ ]])[0]
+        coords_latlon = [(c[1], c[0]) for c in line]
+        dist_mi = (props.get("distance") or 0)/1609.344
+        dur_min = (props.get("time") or 0)/60.0
+        return True, {"provider":"geoapify","distance_miles":dist_mi,"duration_minutes":dur_min,
+                      "coordinates":coords_latlon,"encoded":encode_polyline(coords_latlon) if coords_latlon else None}
+    except Exception as e:
+        return False, {"error": repr(e), "provider": "geoapify"}
+
+def route_via_ors(olat, olon, dlat, dlon, profile="driving-car"):
+    key = os.getenv("ORS_KEY", os.getenv("OPENROUTESERVICE_KEY","")).strip()
+    if not key:
+        return False, {"error": "ORS_KEY not set", "provider": "ors"}
+    url = f"https://api.openrouteservice.org/v2/directions/{profile}"
+    payload = {"coordinates": [[olon, olat], [dlon, dlat]]}
+    headers = {"Authorization": key, "Content-Type": "application/json"}
+    try:
+        r = requests.post(url, headers=headers, json=payload, timeout=20); r.raise_for_status()
+        gj = r.json()
+        feat = (gj.get("features") or [None])[0]
+        if not feat: return False, {"error":"no features","provider":"ors"}
+        geom = feat.get("geometry", {}); props = feat.get("properties", {}).get("summary", {})
+        line = geom.get("coordinates") or []
+        coords_latlon = [(c[1], c[0]) for c in line]
+        dist_mi = (props.get("distance") or 0)/1609.344
+        dur_min = (props.get("duration") or 0)/60.0
+        return True, {"provider":"ors","distance_miles":dist_mi,"duration_minutes":dur_min,
+                      "coordinates":coords_latlon,"encoded":encode_polyline(coords_latlon) if coords_latlon else None}
+    except Exception as e:
+        return False, {"error": repr(e), "provider":"ors"}
+
+def route_via_google(olat, olon, dlat, dlon, mode="driving"):
+    key = os.getenv("GOOGLE_MAPS_API_KEY","").strip()
+    if not key:
+        return False, {"error":"GOOGLE_MAPS_API_KEY not set", "provider":"google"}
+    url = ("https://maps.googleapis.com/maps/api/directions/json"
+           f"?origin={olat},{olon}&destination={dlat},{dlon}&mode={mode}&key={key}")
+    try:
+        r = requests.get(url, timeout=20); r.raise_for_status()
+        js = r.json(); routes = js.get("routes") or []
+        if not routes: return False, {"error": js.get("status") or "no routes", "provider":"google"}
+        r0 = routes[0]
+        dist_m = 0; dur_s = 0
+        for leg in r0.get("legs", []):
+            dist_m += (leg.get("distance", {}).get("value") or 0)
+            dur_s += (leg.get("duration", {}).get("value") or 0)
+        enc = r0.get("overview_polyline", {}).get("points")
+        return True, {"provider":"google","distance_miles":dist_m/1609.344,"duration_minutes":dur_s/60.0,
+                      "coordinates": None, "encoded": enc}
+    except Exception as e:
+        return False, {"error": repr(e), "provider":"google"}
+
+def get_route_geometry(router: Literal["auto","geoapify","ors","google","none"],
+                       olat: float, olon: float, dlat: float, dlon: float):
+    if router == "none":
+        return False, {"provider":"none","error":"routing disabled"}
+    if router == "auto":
+        if os.getenv("GEOAPIFY_KEY"): router = "geoapify"
+        elif os.getenv("ORS_KEY") or os.getenv("OPENROUTESERVICE_KEY"): router = "ors"
+        elif os.getenv("GOOGLE_MAPS_API_KEY"): router = "google"
+        else: return False, {"provider":"auto","error":"no routing keys set"}
+    if router == "geoapify": return route_via_geoapify(olat, olon, dlat, dlon)
+    if router == "ors":      return route_via_ors(olat, olon, dlat, dlon)
+    if router == "google":   return route_via_google(olat, olon, dlat, dlon)
+    return False, {"error": f"unknown router {router}"}
+
 # ---------- main ----------
 def main():
     ap = argparse.ArgumentParser()
@@ -154,7 +258,10 @@ def main():
     ap.add_argument("--dest-lon", type=float, required=True)
     ap.add_argument("--leave-in", type=int, default=0)
     ap.add_argument("--live", action="store_true", help="blend NWS/511 bumps from data/live_logs/*.csv")
-    ap.add_argument("--horizon", type=int, default=15)   # future TFT compatibility
+    ap.add_argument("--horizon", type=int, default=15)
+    # NEW
+    ap.add_argument("--router", default="auto", choices=["auto","geoapify","ors","google","none"])
+    ap.add_argument("--polyline-format", default="encoded", choices=["encoded","geojson"])
     args = ap.parse_args()
 
     clf = joblib.load(MODEL_PATH)
@@ -171,14 +278,52 @@ def main():
     if args.live:
         p_time, live_info = apply_live_bumps(p_time, args.leave_in)
 
-    # distance & ETA
-    dist_mi = haversine_miles(args.origin_lat, args.origin_lon, args.dest_lat, args.dest_lon)
+    # distance & ETA (fallback)
+    dist_mi_sl = haversine_miles(args.origin_lat, args.origin_lon, args.dest_lat, args.dest_lon)
     path_factor = 1.10 if args.roadway.upper().startswith("I-") else 1.20
-    route_mi = dist_mi * path_factor
+    route_mi_est = dist_mi_sl * path_factor
     freeflow = road_freeflow_mph(args.roadway)
     speed_mult = probability_to_speed_multiplier(p_time)
     eff_speed = max(5.0, freeflow * speed_mult)
-    eta_hr = route_mi / eff_speed; eta_min = eta_hr * 60.0
+    eta_hr = route_mi_est / eff_speed
+    eta_min = eta_hr * 60.0
+
+    # routing geometry
+    route_ok, route_info = get_route_geometry(args.router, args.origin_lat, args.origin_lon,
+                                              args.dest_lat, args.dest_lon)
+    if route_ok:
+        r_dist_mi = float(route_info.get("distance_miles") or route_mi_est)
+        eta_hr = r_dist_mi / max(5.0, eff_speed)
+        eta_min = eta_hr * 60.0
+        if args.polyline_format == "encoded":
+            encoded = route_info.get("encoded")
+            if not encoded and route_info.get("coordinates"):
+                encoded = encode_polyline(route_info["coordinates"])
+            route_payload = {
+                "provider": route_info.get("provider"),
+                "distance_miles": round(r_dist_mi, 3),
+                "base_duration_minutes": round(float(route_info.get("duration_minutes") or 0.0), 1),
+                "polyline": {"format": "encoded", "encoded": encoded},
+            }
+        else:
+            coords = route_info.get("coordinates") or []
+            route_payload = {
+                "provider": route_info.get("provider"),
+                "distance_miles": round(r_dist_mi, 3),
+                "base_duration_minutes": round(float(route_info.get("duration_minutes") or 0.0), 1),
+                "geojson": {"type": "LineString", "coordinates": [[lon, lat] for lat, lon in coords]},
+            }
+    else:
+        coords = [(args.origin_lat, args.origin_lon), (args.dest_lat, args.dest_lon)]
+        enc = encode_polyline(coords)
+        route_payload = {
+            "provider": route_info.get("provider", "fallback"),
+            "distance_miles": round(route_mi_est, 3),
+            "base_duration_minutes": None,
+            "polyline": {"format": "encoded", "encoded": enc} if args.polyline_format == "encoded"
+                       else {"type": "LineString", "coordinates": [[args.origin_lon, args.origin_lat],
+                                                                   [args.dest_lon, args.dest_lat]]}
+        }
 
     out = {
         "ok": True,
@@ -191,9 +336,9 @@ def main():
             "leave_in_minutes": args.leave_in
         },
         "distance": {
-            "straight_line_miles": round(dist_mi,3),
-            "route_distance_miles_est": round(route_mi,3),
-            "path_factor": path_factor
+            "straight_line_miles": round(dist_mi_sl,3),
+            "route_distance_miles_used": round(route_payload.get("distance_miles", route_mi_est), 3),
+            "path_factor_if_no_router": path_factor
         },
         "speed": {
             "freeflow_mph": freeflow,
@@ -203,9 +348,11 @@ def main():
         },
         "eta": {"minutes": round(eta_min,1), "hours": round(eta_hr,3)},
         "live": live_info,
+        "route": route_payload,
         "notes": [
             "Prototype uses AADT-based proxy; live bumps add coarse weather/incident impact.",
-            "When TFT is trained, these will be learned effects with multi-horizon outputs."
+            "Routing geometry is provided for map display; ETA comes from GBT + live bumps.",
+            "When TFT is trained, multi-horizon forecasts will replace the coarse bumps."
         ]
     }
     print(json.dumps(out, indent=2))

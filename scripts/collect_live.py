@@ -1,38 +1,41 @@
 #!/usr/bin/env python
 # scripts/collect_live.py
 # Append NWS (weather/alerts) + 511 GA (events) to single CSVs on each run.
-# Adds a 1-row-per-run heartbeat file: data/live_logs/live_snapshots.csv
+# Also writes a 1-row heartbeat to data/live_logs/live_snapshots.csv
 
-import os, csv, argparse, datetime as dt
+import os
+import csv
+import argparse
+import datetime as dt
 from pathlib import Path
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-# ---------- config ----------
+# ---------------- config ----------------
 DATA_DIR = Path("data/live_logs")
+NWS_HOURLY_CSV   = DATA_DIR / "nws_hourly.csv"
+NWS_ALERTS_CSV   = DATA_DIR / "nws_alerts.csv"
+GA511_EVENTS_CSV = DATA_DIR / "ga511_events.csv"
+LIVE_SNAP_CSV    = DATA_DIR / "live_snapshots.csv"
 
-try:
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-except Exception as e:
-    print(f"Error creating directory: {e}")
-    exit(1)
+PRUNE_DAYS = 90  # disabled below (uncomment if/when you want pruning)
 
-NWS_HOURLY_CSV    = DATA_DIR / "nws_hourly.csv"
-NWS_ALERTS_CSV    = DATA_DIR / "nws_alerts.csv"
-GA511_EVENTS_CSV  = DATA_DIR / "ga511_events.csv"
-LIVE_SNAP_CSV     = DATA_DIR / "live_snapshots.csv"   # NEW: 1 row per run
-
-PRUNE_DAYS = 90
-
-UA = {"User-Agent": "jc-traffic-student/1.0 (your_real_email@school.org)"}
+# Friendly UA for public APIs (you can override with env GRITS_UA)
+UA = {"User-Agent": os.getenv("GRITS_UA", "grits-student/1.0 (khangng872@gmail.com)")}
 GA511_KEY = os.getenv("GA511_KEY", "").strip()
 
+# ensure directory exists
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+
+# ---------------- helpers ----------------
 def _session():
     retry = Retry(
         total=5, backoff_factor=1.2,
-        status_forcelist=[429,500,502,503,504],
-        allowed_methods=["GET"], respect_retry_after_header=True,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["GET"],
+        respect_retry_after_header=True,
     )
     s = requests.Session()
     s.headers.update(UA)
@@ -43,6 +46,8 @@ def ts_iso(d=None):
     return (d or dt.datetime.now(dt.timezone.utc)).replace(microsecond=0).isoformat()
 
 def append_csv(path: Path, header: list[str], rows: list[dict]):
+    if not rows:
+        return
     path.parent.mkdir(parents=True, exist_ok=True)
     exists = path.exists()
     with path.open("a", newline="", encoding="utf-8") as f:
@@ -53,55 +58,91 @@ def append_csv(path: Path, header: list[str], rows: list[dict]):
             w.writerow({k: r.get(k) for k in header})
 
 def prune_csv_by_days(path: Path, date_field: str):
-    if not path.exists(): return
+    if not path.exists():
+        return
     try:
         import pandas as pd
         df = pd.read_csv(path)
-        if df.empty or date_field not in df.columns: return
+        if df.empty or date_field not in df.columns:
+            return
         df[date_field] = pd.to_datetime(df[date_field], errors="coerce", utc=True)
         cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=PRUNE_DAYS)
         df = df[df[date_field] >= cutoff]
         tmp = path.with_suffix(".tmp.csv")
-        df.to_csv(tmp, index=False); tmp.replace(path)
+        df.to_csv(tmp, index=False)
+        tmp.replace(path)
     except Exception as e:
         print(f"[prune] warning for {path.name}: {e}")
 
-# ---------- NWS ----------
+
+# ---------------- NWS ----------------
 def nws_hourly(lat: float, lon: float):
     s = _session()
     try:
-        p = s.get(f"https://api.weather.gov/points/{lat},{lon}", timeout=(8,20)); p.raise_for_status()
+        p = s.get(f"https://api.weather.gov/points/{lat},{lon}", timeout=(8, 20))
+        p.raise_for_status()
         hourly_url = p.json()["properties"]["forecastHourly"]
-        fh = s.get(hourly_url, timeout=(8,20)); fh.raise_for_status()
-        periods = fh.json()["properties"]["periods"]
-        al = s.get(f"https://api.weather.gov/alerts/active?point={lat},{lon}", timeout=(8,20)); al.raise_for_status()
+
+        fh = s.get(hourly_url, timeout=(8, 20))
+        fh.raise_for_status()
+        periods = fh.json().get("properties", {}).get("periods", []) or []
+
+        al = s.get(f"https://api.weather.gov/alerts/active?point={lat},{lon}", timeout=(8, 20))
+        al.raise_for_status()
         alerts = al.json()
         return periods, alerts, None
     except Exception as e:
-        return [], {"features":[]}, str(e)
+        return [], {"features": []}, str(e)
 
-# ---------- 511 GA ----------
+
+# ---------------- 511 GA ----------------
 def ga511_events():
-    if not GA511_KEY:
+    key = os.getenv("GA511_KEY", "").strip()
+    if not key:
         return [], "GA511_KEY not set"
     try:
         s = _session()
-        url = f"https://511ga.org/api/v2/get/event?format=json&key={GA511_KEY}"
-        r = s.get(url, timeout=(8,20)); r.raise_for_status()
+        url = f"https://511ga.org/api/v2/get/event?format=json&key={key}"
+        r = s.get(url, timeout=(8, 20))
+        r.raise_for_status()
         data = r.json()
-        events = data.get("events") or data.get("event") or data
-        if isinstance(events, dict): events = [events]
-        if not isinstance(events, list): events = []
-        return events, None
-    except Exception as e:
-        return [], str(e)
 
-# ---------- main ----------
+        # Normalize to a flat list[dict]
+        events: list[dict] = []
+
+        def _flatten(obj):
+            if isinstance(obj, dict):
+                # common wrappers in various 511 APIs
+                for k in ("events", "event", "data"):
+                    if k in obj:
+                        _flatten(obj[k])
+                        return
+                events.append(obj)  # treat as single event dict
+            elif isinstance(obj, list):
+                for x in obj:
+                    _flatten(x)
+            # ignore scalars/None
+
+        _flatten(data)
+        return events, None
+
+    except requests.HTTPError as e:
+        # Fix: r is not defined in this context, use e.response instead
+        try:
+            response = e.response
+            return [], f"HTTP {response.status_code}: {response.text[:200]}"
+        except Exception:
+            return [], f"HTTP error: {e}"
+    except Exception as e:
+        return [], repr(e)
+
+
+# ---------------- main ----------------
 def run(lat: float, lon: float):
     now = dt.datetime.now(dt.timezone.utc)
     snap_ts = ts_iso(now)
 
-    # NWS
+    # ---- NWS (hourly forecast periods) ----
     periods, alerts, nws_err = nws_hourly(lat, lon)
     nws_rows = [{
         "snapshot_utc": snap_ts,
@@ -116,14 +157,23 @@ def run(lat: float, lon: float):
     } for p in periods]
     append_csv(
         NWS_HOURLY_CSV,
-        ["snapshot_utc","startTime","endTime","temperature","temperatureUnit","windSpeed","windDirection","shortForecast","detailedForecast"],
+        ["snapshot_utc", "startTime", "endTime", "temperature", "temperatureUnit",
+         "windSpeed", "windDirection", "shortForecast", "detailedForecast"],
         nws_rows
     )
 
+    # ---- NWS (alerts) ----
+    feats = []
+    if isinstance(alerts, dict):
+        feats = alerts.get("features", []) or []
+    elif isinstance(alerts, list):
+        feats = alerts  # some responses may already be a list of features
+
     alerts_rows = []
-    feats = (alerts or {}).get("features", [])
     for a in feats:
-        prop = a.get("properties", {})
+        if not isinstance(a, dict):
+            continue
+        prop = a.get("properties", {}) if isinstance(a.get("properties"), dict) else {}
         alerts_rows.append({
             "snapshot_utc": snap_ts,
             "id": a.get("id"),
@@ -139,49 +189,101 @@ def run(lat: float, lon: float):
         })
     append_csv(
         NWS_ALERTS_CSV,
-        ["snapshot_utc","id","event","severity","certainty","urgency","effective","onset","ends","headline","areaDesc"],
+        ["snapshot_utc", "id", "event", "severity", "certainty", "urgency",
+         "effective", "onset", "ends", "headline", "areaDesc"],
         alerts_rows
     )
 
-    # 511
+    # ---- 511 events ----
     events, ev_err = ga511_events()
-    ev_rows = [{
-        "snapshot_utc": snap_ts,
-        "id": e.get("id") or e.get("eventId"),
-        "type": e.get("type"),
-        "subtype": e.get("subtype"),
-        "headline": e.get("headline") or e.get("title") or e.get("description"),
-        "status": e.get("status"),
-        "startTime": e.get("startTime"),
-        "endTime": e.get("endTime"),
-        "lat": e.get("latitude") or e.get("lat"),
-        "lon": e.get("longitude") or e.get("lon"),
-        "lanesBlocked": e.get("lanesBlocked") or e.get("lanes"),
-        "roadName": e.get("roadName") or e.get("route"),
-        "direction": e.get("direction"),
-    } for e in events]
+
+    def pick(d: dict, *keys):
+        for k in keys:
+            v = d.get(k)
+            if v not in (None, "", "null"):
+                return v
+        return None
+
+    def pick_nested(d: dict, *paths):
+        # paths are tuples like ("location","latitude") or ("geometry","coordinates",1)
+        for path in paths:
+            cur = d
+            ok = True
+            for seg in path:
+                if isinstance(cur, dict) and seg in cur:
+                    cur = cur[seg]
+                elif isinstance(cur, (list, tuple)) and isinstance(seg, int) and 0 <= seg < len(cur):
+                    cur = cur[seg]
+                else:
+                    ok = False
+                    break
+            if ok and cur not in (None, "", "null"):
+                return cur
+        return None
+
+    ev_rows = []
+    for e in events:
+        if not isinstance(e, dict):
+            continue
+
+        # coordinates from many shapes
+        lat = pick(e, "latitude", "lat", "Latitude", "Y")
+        lon = pick(e, "longitude", "lon", "Longitude", "X")
+        if lat is None or lon is None:
+            # try nested: location{}, geometry{coordinates [lon,lat]}
+            lat = pick_nested(e, ("location","latitude"), ("point","lat"), ("geo","lat"))
+            lon = pick_nested(e, ("location","longitude"), ("point","lon"), ("geo","lon"))
+            if lat is None or lon is None:
+                # GeoJSON: geometry.coordinates = [lon, lat]
+                glon = pick_nested(e, ("geometry","coordinates",0))
+                glat = pick_nested(e, ("geometry","coordinates",1))
+                lat = lat if lat is not None else glat
+                lon = lon if lon is not None else glon
+        try:
+            flat = float(lat) if lat is not None else None
+            flon = float(lon) if lon is not None else None
+        except Exception:
+            flat, flon = None, None
+
+        ev_rows.append({
+            "snapshot_utc": snap_ts,
+            "id": pick(e, "id", "eventId", "incidentId", "Id"),
+            "type": pick(e, "type", "eventType", "typeDesc"),
+            "subtype": pick(e, "subtype", "eventSubType", "subTypeDesc"),
+            "headline": pick(e, "headline", "title", "shortDescription", "description", "fullDesc"),
+            "status": pick(e, "status", "eventStatus", "Status"),
+            "startTime": pick(e, "startTime", "start_time", "starttime", "StartTime"),
+            "endTime": pick(e, "endTime", "end_time", "endtime", "EndTime"),
+            "lat": flat,
+            "lon": flon,
+            "lanesBlocked": pick(e, "lanesBlocked", "lanes", "lanesAffected"),
+            "roadName": pick(e, "roadName", "route", "routeName", "road", "street", "roadwayName"),
+            "direction": pick(e, "direction", "dir", "Direction"),
+        })
+
     append_csv(
         GA511_EVENTS_CSV,
-        ["snapshot_utc","id","type","subtype","headline","status","startTime","endTime","lat","lon","lanesBlocked","roadName","direction"],
+        ["snapshot_utc","id","type","subtype","headline","status","startTime","endTime",
+        "lat","lon","lanesBlocked","roadName","direction"],
         ev_rows
     )
 
-    # --- NEW: write a 1-row snapshot per run (easy to see growth) ---
-    # Pick the period that covers "now" (or nearest).
+
+    # ---- 1-line heartbeat snapshot (for quick monitoring) ----
     wx_short, wx_temp, wx_wind, wx_precip = None, None, None, None
     try:
         import pandas as pd
         if periods:
             df = pd.DataFrame(periods)
-            df["startTime"] = pd.to_datetime(df["startTime"], errors="coerce", utc=True)
-            df["endTime"]   = pd.to_datetime(df["endTime"], errors="coerce", utc=True)
+            df["startTime"] = pd.to_datetime(df.get("startTime"), errors="coerce", utc=True)
+            df["endTime"]   = pd.to_datetime(df.get("endTime"), errors="coerce", utc=True)
             in_now = df[(df["startTime"] <= now) & (df["endTime"] > now)]
             row = in_now.iloc[0] if not in_now.empty else df.iloc[(df["startTime"] - now).abs().argsort()[:1]].iloc[0]
-            wx_short = str(row.get("shortForecast") or "")
+            wx_short = str((row.get("shortForecast") or "")).strip()
             wx_temp  = row.get("temperature")
             wx_wind  = row.get("windSpeed")
             s = wx_short.lower()
-            wx_precip = any(k in s for k in ["rain","thunder","storm","showers","snow","hail","drizzle"])
+            wx_precip = any(k in s for k in ["rain", "thunder", "storm", "showers", "snow", "hail", "drizzle"])
     except Exception:
         pass
 
@@ -194,20 +296,20 @@ def run(lat: float, lon: float):
         "wx_precip_flag": wx_precip,
         "nws_periods_written": len(nws_rows),
         "alerts_count": len(alerts_rows),
-        "ga511_ok": ev_err is None and GA511_KEY != "",
+        "ga511_ok": (ev_err is None),
         "ga511_events_count": len(ev_rows),
         "errors": "; ".join([e for e in [nws_err, ev_err] if e]) if (nws_err or ev_err) else "",
     }
     append_csv(
         LIVE_SNAP_CSV,
-        ["snapshot_utc","nws_ok","wx_short","wx_temp","wx_wind","wx_precip_flag","nws_periods_written","alerts_count","ga511_ok","ga511_events_count","errors"],
+        ["snapshot_utc", "nws_ok", "wx_short", "wx_temp", "wx_wind",
+         "wx_precip_flag", "nws_periods_written", "alerts_count",
+         "ga511_ok", "ga511_events_count", "errors"],
         [snap_row]
     )
 
     print(f"Data directory: {DATA_DIR.absolute()}")
-
-
-    # prune
+    # Pruning disabled by default; re-enable when your files get large:
     # prune_csv_by_days(NWS_HOURLY_CSV, "snapshot_utc")
     # prune_csv_by_days(NWS_ALERTS_CSV, "snapshot_utc")
     # prune_csv_by_days(GA511_EVENTS_CSV, "snapshot_utc")

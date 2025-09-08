@@ -17,3 +17,4 @@ matplotlib~=3.9
 # torch~=2.4            # CPU-only install; consider platform wheels
 # pytorch-forecasting~=1.0
 # optuna~=3.6
+requests>=2.31,<3
