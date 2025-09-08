@@ -1,5 +1,39 @@
-﻿data/live_logs/
-.env
-*.log
+# Python
 __pycache__/
+*.py[cod]
+*.so
+
+# Virtualenvs
+.venv/
+venv/
+
+# macOS / Editors
+.DS_Store
+.vscode/
+.idea/
+
+# Local data & logs (not in repo)
+data/live_logs/
+data/raw/
+data/tmp/
+logs/
+*.log
+*.tmp
+*.bak
+
+# Models & large artifacts
+models/
+latest_model.pkl
+*.pkl
+*.joblib
+
+# Notebooks cache
 .ipynb_checkpoints/
+
+# Env files / secrets
+.env
+secrets*.json
+
+# Local runner scripts (optional)
+run_collect_live.bat
+run_collect_live.sh
