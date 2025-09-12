@@ -19,7 +19,9 @@ CORS(
     app,
     resources={
         r"/predict": {"origins": _cors_origins or "*"},
+        r"/api/predict": {"origins": _cors_origins or "*"},
         r"/health": {"origins": "*"},
+        r"/api/health": {"origins": "*"},
     },
 )
 
@@ -94,6 +96,19 @@ def _load_resources() -> bool:
 
 @app.get("/health")
 def health():
+    # Lightweight liveness endpoint (no heavy loading) to avoid timeouts on cold start
+    return jsonify({"ok": True, "status": "alive"})
+
+
+@app.get("/api/health")
+def api_health():
+    # Mirror for clients that query /api/health
+    return health()
+
+
+@app.get("/ready")
+def ready():
+    # Readiness: ensure model/schema/stations are ready (may be slow on first call)
     ok = _load_resources()
     return jsonify(
         {
@@ -215,6 +230,12 @@ def predict():
             "live": live_info,
         }
     )
+
+
+@app.post("/api/predict")
+def api_predict():
+    # Mirror for clients that post to /api/predict
+    return predict()
 
 
 if __name__ == "__main__":
