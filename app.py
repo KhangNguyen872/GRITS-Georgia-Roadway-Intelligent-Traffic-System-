@@ -26,7 +26,11 @@ CORS(
 
 # Optional remote sources if local files are not present.
 MODEL_URL = os.getenv("MODEL_URL")
-SCHEMA_URL = os.getenv("SCHEMA_URL")
+# Provide a sensible default for schema if not present locally
+SCHEMA_URL = os.getenv(
+    "SCHEMA_URL",
+    "https://raw.githubusercontent.com/KhangNguyen872/GRITS-Georgia-Roadway-Intelligent-Traffic-System-/main/outputs/feature_schema.json",
+)
 
 _clf = None
 _schema = None
@@ -217,4 +221,3 @@ if __name__ == "__main__":
     # Local dev server. On Render, use: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2
     port = int(os.getenv("PORT", "8000"))
     app.run(host="0.0.0.0", port=port, debug=True)
-
