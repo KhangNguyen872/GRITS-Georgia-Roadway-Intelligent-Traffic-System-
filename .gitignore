@@ -1,0 +1,7 @@
+data/live_logs/
+logs/
+*.csv
+!data/sample/**
+models/*.pkl
+outputs/*
+.env

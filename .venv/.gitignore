@@ -1,0 +1,17 @@
+# Ignore Python venv
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore data/logs that grow large
+data/live_logs/
+logs/
+*.csv
+!data/sample/**        # keep only small CSV samples tracked
+
+# Ignore model outputs
+models/*.pkl
+outputs/*
+
+# Ignore local environment variables
+.env
