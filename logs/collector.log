@@ -1,0 +1,974 @@
+[Sat 09/06/2025 19:58:08.35] START 
+[511] info: GA511_KEY not set; skipping events.
+Saved NWS hourly: 156 | alerts: 0 | 511 events: 0 at 2025-09-06T23:58:08+00:00
+[Sat 09/06/2025 19:58:09.59] END exitcode=0 
+[Sat 09/06/2025 19:58:35.35] START 
+[511] info: GA511_KEY not set; skipping events.
+Saved NWS hourly: 156 | alerts: 0 | 511 events: 0 at 2025-09-06T23:58:35+00:00
+[Sat 09/06/2025 19:58:36.69] END exitcode=0 
+[Sat 09/06/2025 20:00:01.37] START 
+[511] info: GA511_KEY not set; skipping events.
+Saved NWS hourly: 156 | alerts: 0 | 511 events: 0 at 2025-09-07T00:00:01+00:00
+[Sat 09/06/2025 20:00:22.03] END exitcode=0 
+[Sat 09/06/2025 20:05:02.84] START 
+[511] info: GA511_KEY not set; skipping events.
+Saved NWS hourly: 156 | alerts: 0 | 511 events: 0 at 2025-09-07T00:05:03+00:00
+[Sat 09/06/2025 20:05:04.82] END exitcode=0 
+[Sat 09/06/2025 20:10:02.70] START 
+[511] info: GA511_KEY not set; skipping events.
+Saved NWS hourly: 156 | alerts: 0 | 511 events: 0 at 2025-09-07T00:10:03+00:00
+[Sat 09/06/2025 20:10:04.65] END exitcode=0 
+[Sat 09/06/2025 20:15:03.01] START 
+[511] info: GA511_KEY not set; skipping events.
+Saved NWS hourly: 156 | alerts: 0 | 511 events: 0 at 2025-09-07T00:15:03+00:00
+[Sat 09/06/2025 20:15:12.64] END exitcode=0 
+[Sat 09/06/2025 20:20:02.83] START 
+[511] info: GA511_KEY not set; skipping events.
+Saved NWS hourly: 156 | alerts: 0 | 511 events: 0 at 2025-09-07T00:20:03+00:00
+[Sat 09/06/2025 20:20:04.97] END exitcode=0 
+[Sat 09/06/2025 20:25:02.61] START 
+[511] info: GA511_KEY not set; skipping events.
+Saved NWS hourly: 156 | alerts: 0 | 511 events: 0 at 2025-09-07T00:25:03+00:00
+[Sat 09/06/2025 20:25:05.04] END exitcode=0 
+[Sat 09/06/2025 20:30:02.96] START 
+[511] info: GA511_KEY not set; skipping events.
+Saved NWS hourly: 156 | alerts: 0 | 511 events: 0 at 2025-09-07T00:30:03+00:00
+[Sat 09/06/2025 20:30:04.83] END exitcode=0 
+[Sat 09/06/2025 20:35:02.87] START 
+[511] info: GA511_KEY not set; skipping events.
+Saved NWS hourly: 156 | alerts: 0 | 511 events: 0 at 2025-09-07T00:35:03+00:00
+[Sat 09/06/2025 20:35:05.08] END exitcode=0 
+[Sat 09/06/2025 20:40:02.61] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T00:40:02+00:00
+[Sat 09/06/2025 20:40:04.36] END exitcode=0 
+[Sat 09/06/2025 20:41:41.78] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T00:41:42+00:00
+[Sat 09/06/2025 20:41:43.14] END exitcode=0 
+[Sat 09/06/2025 20:41:52.94] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T00:41:53+00:00
+[Sat 09/06/2025 20:41:54.35] END exitcode=0 
+[Sat 09/06/2025 20:43:01.25] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T00:43:01+00:00
+[Sat 09/06/2025 20:43:03.01] END exitcode=0 
+[Sat 09/06/2025 20:44:54.67] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T00:44:54+00:00
+[Sat 09/06/2025 20:44:56.15] END exitcode=0 
+[Sat 09/06/2025 20:48:02.21] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T00:48:02+00:00
+[Sat 09/06/2025 20:48:04.46] END exitcode=0 
+[Sat 09/06/2025 20:53:02.36] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T00:53:02+00:00
+[Sat 09/06/2025 20:53:04.75] END exitcode=0 
+[Sat 09/06/2025 20:58:02.46] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T00:58:03+00:00
+[Sat 09/06/2025 20:58:07.42] END exitcode=0 
+[Sat 09/06/2025 21:03:02.45] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:03:03+00:00
+[Sat 09/06/2025 21:03:31.02] END exitcode=0 
+[Sat 09/06/2025 21:08:02.56] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:08:03+00:00
+[Sat 09/06/2025 21:08:23.08] END exitcode=0 
+[Sat 09/06/2025 21:13:02.36] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:13:02+00:00
+[Sat 09/06/2025 21:13:04.91] END exitcode=0 
+[Sat 09/06/2025 21:18:02.37] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:18:02+00:00
+[Sat 09/06/2025 21:18:04.01] END exitcode=0 
+[Sat 09/06/2025 21:21:24.09] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:21:24+00:00
+[Sat 09/06/2025 21:21:25.64] END exitcode=0 
+[Sat 09/06/2025 21:21:40.71] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:21:41+00:00
+[Sat 09/06/2025 21:21:42.48] END exitcode=0 
+[Sat 09/06/2025 21:21:56.99] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:21:57+00:00
+[Sat 09/06/2025 21:21:59.22] END exitcode=0 
+[Sat 09/06/2025 21:22:16.63] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:22:16+00:00
+[Sat 09/06/2025 21:22:18.31] END exitcode=0 
+[Sat 09/06/2025 21:22:32.74] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:22:33+00:00
+[Sat 09/06/2025 21:22:34.50] END exitcode=0 
+[Sat 09/06/2025 21:22:49.68] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:22:50+00:00
+[Sat 09/06/2025 21:22:51.13] END exitcode=0 
+[Sat 09/06/2025 21:23:00.64] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:23:01+00:00
+[Sat 09/06/2025 21:23:02.34] END exitcode=0 
+[Sat 09/06/2025 21:23:17.46] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:23:17+00:00
+[Sat 09/06/2025 21:23:19.06] END exitcode=0 
+[Sat 09/06/2025 21:24:06.05] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:24:06+00:00
+[Sat 09/06/2025 21:24:07.39] END exitcode=0 
+[Sat 09/06/2025 21:24:22.44] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:24:22+00:00
+[Sat 09/06/2025 21:24:23.79] END exitcode=0 
+[Sat 09/06/2025 21:28:01.97] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:28:02+00:00
+[Sat 09/06/2025 21:28:03.29] END exitcode=0 
+[Sat 09/06/2025 21:33:02.11] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:33:02+00:00
+[Sat 09/06/2025 21:33:14.20] END exitcode=0 
+[Sat 09/06/2025 21:38:02.12] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:38:02+00:00
+[Sat 09/06/2025 21:38:04.00] END exitcode=0 
+[Sat 09/06/2025 21:43:02.09] START 
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:43:02+00:00
+[Sat 09/06/2025 21:43:30.17] END exitcode=0 
+[Sat 09/06/2025 21:58:46.18] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T01:58:46+00:00
+[Sat 09/06/2025 21:58:47.67] END exitcode=0 
+[Sat 09/06/2025 22:00:01.37] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:00:01+00:00
+[Sat 09/06/2025 22:00:03.23] END exitcode=0 
+[Sat 09/06/2025 22:05:02.38] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:05:02+00:00
+[Sat 09/06/2025 22:05:04.47] END exitcode=0 
+[Sat 09/06/2025 22:10:02.34] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:10:02+00:00
+[Sat 09/06/2025 22:10:41.02] END exitcode=0 
+[Sat 09/06/2025 22:15:02.56] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:15:03+00:00
+[Sat 09/06/2025 22:15:04.64] END exitcode=0 
+[Sat 09/06/2025 22:20:02.33] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:20:02+00:00
+[Sat 09/06/2025 22:20:04.17] END exitcode=0 
+[Sat 09/06/2025 22:25:02.54] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:25:02+00:00
+[Sat 09/06/2025 22:25:45.41] END exitcode=0 
+[Sat 09/06/2025 22:30:02.58] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=0 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:30:03+00:00
+[Sat 09/06/2025 22:32:17.58] END exitcode=0 
+[Sat 09/06/2025 22:35:02.67] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:35:03+00:00
+[Sat 09/06/2025 22:37:03.17] END exitcode=0 
+[Sat 09/06/2025 22:40:02.52] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:40:03+00:00
+[Sat 09/06/2025 22:40:35.14] END exitcode=0 
+[Sat 09/06/2025 22:45:02.22] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:45:02+00:00
+[Sat 09/06/2025 22:45:03.76] END exitcode=0 
+[Sat 09/06/2025 22:50:02.46] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:50:03+00:00
+[Sat 09/06/2025 22:50:04.60] END exitcode=0 
+[Sat 09/06/2025 22:55:02.54] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T02:55:03+00:00
+[Sat 09/06/2025 22:55:04.51] END exitcode=0 
+[Sat 09/06/2025 23:00:02.54] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:00:03+00:00
+[Sat 09/06/2025 23:00:04.70] END exitcode=0 
+[Sat 09/06/2025 23:05:02.39] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:05:02+00:00
+[Sat 09/06/2025 23:05:04.22] END exitcode=0 
+[Sat 09/06/2025 23:10:02.60] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:10:03+00:00
+[Sat 09/06/2025 23:10:04.82] END exitcode=0 
+[Sat 09/06/2025 23:15:02.57] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:15:02+00:00
+[Sat 09/06/2025 23:15:04.58] END exitcode=0 
+[Sat 09/06/2025 23:20:02.62] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:20:02+00:00
+[Sat 09/06/2025 23:20:04.31] END exitcode=0 
+[Sat 09/06/2025 23:25:02.41] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:25:02+00:00
+[Sat 09/06/2025 23:25:04.45] END exitcode=0 
+[Sat 09/06/2025 23:30:02.36] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:30:02+00:00
+[Sat 09/06/2025 23:30:03.86] END exitcode=0 
+[Sat 09/06/2025 23:35:02.47] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:35:02+00:00
+[Sat 09/06/2025 23:35:04.08] END exitcode=0 
+[Sat 09/06/2025 23:40:02.40] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:40:02+00:00
+[Sat 09/06/2025 23:40:41.02] END exitcode=0 
+[Sat 09/06/2025 23:45:02.63] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:45:03+00:00
+[Sat 09/06/2025 23:45:04.92] END exitcode=0 
+[Sat 09/06/2025 23:50:02.51] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:50:03+00:00
+[Sat 09/06/2025 23:50:04.88] END exitcode=0 
+[Sat 09/06/2025 23:55:02.65] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T03:55:03+00:00
+[Sat 09/06/2025 23:55:04.84] END exitcode=0 
+[Sun 09/07/2025  0:00:02.87] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:00:03+00:00
+[Sun 09/07/2025  0:00:05.03] END exitcode=0 
+[Sun 09/07/2025  0:05:02.21] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:05:02+00:00
+[Sun 09/07/2025  0:05:22.42] END exitcode=0 
+[Sun 09/07/2025  0:10:02.23] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:10:02+00:00
+[Sun 09/07/2025  0:10:03.64] END exitcode=0 
+[Sun 09/07/2025  0:15:02.41] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:15:02+00:00
+[Sun 09/07/2025  0:15:04.47] END exitcode=0 
+[Sun 09/07/2025  0:20:02.29] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:20:02+00:00
+[Sun 09/07/2025  0:21:01.83] END exitcode=0 
+[Sun 09/07/2025  0:25:02.53] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:25:02+00:00
+[Sun 09/07/2025  0:25:04.71] END exitcode=0 
+[Sun 09/07/2025  0:30:02.67] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:30:03+00:00
+[Sun 09/07/2025  0:30:15.12] END exitcode=0 
+[Sun 09/07/2025  0:35:02.70] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:35:03+00:00
+[Sun 09/07/2025  0:35:04.57] END exitcode=0 
+[Sun 09/07/2025  0:40:02.70] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:40:03+00:00
+[Sun 09/07/2025  0:40:15.34] END exitcode=0 
+[Sun 09/07/2025  0:45:02.70] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:45:03+00:00
+[Sun 09/07/2025  0:45:05.35] END exitcode=0 
+[Sun 09/07/2025  0:50:02.68] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:50:03+00:00
+[Sun 09/07/2025  0:50:05.18] END exitcode=0 
+[Sun 09/07/2025  0:55:02.75] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T04:55:03+00:00
+[Sun 09/07/2025  0:55:04.71] END exitcode=0 
+[Sun 09/07/2025  1:00:02.74] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:00:03+00:00
+[Sun 09/07/2025  1:00:04.81] END exitcode=0 
+[Sun 09/07/2025  1:05:02.82] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:05:03+00:00
+[Sun 09/07/2025  1:05:04.95] END exitcode=0 
+[Sun 09/07/2025  1:10:02.75] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:10:03+00:00
+[Sun 09/07/2025  1:10:05.67] END exitcode=0 
+[Sun 09/07/2025  1:15:01.65] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:15:02+00:00
+[Sun 09/07/2025  1:15:14.23] END exitcode=0 
+[Sun 09/07/2025  1:20:01.69] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:20:02+00:00
+[Sun 09/07/2025  1:20:04.13] END exitcode=0 
+[Sun 09/07/2025  1:25:01.72] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:25:02+00:00
+[Sun 09/07/2025  1:25:03.69] END exitcode=0 
+[Sun 09/07/2025  1:30:01.82] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:30:02+00:00
+[Sun 09/07/2025  1:30:13.99] END exitcode=0 
+[Sun 09/07/2025  1:35:01.82] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:35:02+00:00
+[Sun 09/07/2025  1:35:22.32] END exitcode=0 
+[Sun 09/07/2025  1:40:01.74] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:40:02+00:00
+[Sun 09/07/2025  1:40:03.65] END exitcode=0 
+[Sun 09/07/2025  1:45:01.93] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:45:02+00:00
+[Sun 09/07/2025  1:45:04.02] END exitcode=0 
+[Sun 09/07/2025  1:50:01.80] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:50:02+00:00
+[Sun 09/07/2025  1:50:03.89] END exitcode=0 
+[Sun 09/07/2025  1:55:01.80] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T05:55:02+00:00
+[Sun 09/07/2025  1:55:14.02] END exitcode=0 
+[Sun 09/07/2025  2:00:01.86] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:00:02+00:00
+[Sun 09/07/2025  2:00:04.10] END exitcode=0 
+[Sun 09/07/2025  2:05:01.87] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:05:02+00:00
+[Sun 09/07/2025  2:05:03.84] END exitcode=0 
+[Sun 09/07/2025  2:10:01.83] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:10:02+00:00
+[Sun 09/07/2025  2:10:03.87] END exitcode=0 
+[Sun 09/07/2025  2:15:01.86] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:15:02+00:00
+[Sun 09/07/2025  2:15:19.86] END exitcode=0 
+[Sun 09/07/2025  2:20:01.85] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:20:02+00:00
+[Sun 09/07/2025  2:20:22.18] END exitcode=0 
+[Sun 09/07/2025  2:25:01.88] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:25:02+00:00
+[Sun 09/07/2025  2:25:03.74] END exitcode=0 
+[Sun 09/07/2025  2:30:01.81] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:30:02+00:00
+[Sun 09/07/2025  2:31:01.31] END exitcode=0 
+[Sun 09/07/2025  2:35:01.87] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:35:02+00:00
+[Sun 09/07/2025  2:35:48.85] END exitcode=0 
+[Sun 09/07/2025  2:40:01.93] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:40:02+00:00
+[Sun 09/07/2025  2:40:04.09] END exitcode=0 
+[Sun 09/07/2025  2:45:01.86] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:45:02+00:00
+[Sun 09/07/2025  2:45:22.22] END exitcode=0 
+[Sun 09/07/2025  2:50:01.85] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:50:02+00:00
+[Sun 09/07/2025  2:50:23.30] END exitcode=0 
+[Sun 09/07/2025  2:55:01.91] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T06:55:02+00:00
+[Sun 09/07/2025  2:55:04.61] END exitcode=0 
+[Sun 09/07/2025  3:00:01.77] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:00:02+00:00
+[Sun 09/07/2025  3:00:03.67] END exitcode=0 
+[Sun 09/07/2025  3:05:01.84] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:05:02+00:00
+[Sun 09/07/2025  3:05:03.88] END exitcode=0 
+[Sun 09/07/2025  3:10:01.89] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:10:02+00:00
+[Sun 09/07/2025  3:10:04.08] END exitcode=0 
+[Sun 09/07/2025  3:15:01.93] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:15:02+00:00
+[Sun 09/07/2025  3:15:15.16] END exitcode=0 
+[Sun 09/07/2025  3:20:01.90] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:20:02+00:00
+[Sun 09/07/2025  3:20:15.23] END exitcode=0 
+[Sun 09/07/2025  3:25:01.91] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:25:02+00:00
+[Sun 09/07/2025  3:25:03.71] END exitcode=0 
+[Sun 09/07/2025  3:30:01.95] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:30:02+00:00
+[Sun 09/07/2025  3:30:30.05] END exitcode=0 
+[Sun 09/07/2025  3:35:01.89] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:35:02+00:00
+[Sun 09/07/2025  3:35:03.97] END exitcode=0 
+[Sun 09/07/2025  3:40:02.02] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:40:02+00:00
+[Sun 09/07/2025  3:40:22.56] END exitcode=0 
+[Sun 09/07/2025  3:45:02.12] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:45:02+00:00
+[Sun 09/07/2025  3:45:14.68] END exitcode=0 
+[Sun 09/07/2025  3:50:01.92] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:50:02+00:00
+[Sun 09/07/2025  3:50:23.17] END exitcode=0 
+[Sun 09/07/2025  3:55:01.94] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T07:55:02+00:00
+[Sun 09/07/2025  3:55:03.83] END exitcode=0 
+[Sun 09/07/2025  4:00:02.04] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:00:02+00:00
+[Sun 09/07/2025  4:00:04.02] END exitcode=0 
+[Sun 09/07/2025  4:05:01.96] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:05:02+00:00
+[Sun 09/07/2025  4:05:25.39] END exitcode=0 
+[Sun 09/07/2025  4:10:02.01] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:10:02+00:00
+[Sun 09/07/2025  4:10:22.49] END exitcode=0 
+[Sun 09/07/2025  4:15:01.94] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:15:02+00:00
+[Sun 09/07/2025  4:15:14.25] END exitcode=0 
+[Sun 09/07/2025  4:20:02.00] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:20:02+00:00
+[Sun 09/07/2025  4:20:03.90] END exitcode=0 
+[Sun 09/07/2025  4:25:02.25] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:25:03+00:00
+[Sun 09/07/2025  4:25:11.50] END exitcode=0 
+[Sun 09/07/2025  4:30:01.99] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:30:02+00:00
+[Sun 09/07/2025  4:30:14.29] END exitcode=0 
+[Sun 09/07/2025  4:35:02.14] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:35:02+00:00
+[Sun 09/07/2025  4:35:40.72] END exitcode=0 
+[Sun 09/07/2025  4:40:02.09] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:40:02+00:00
+[Sun 09/07/2025  4:40:14.48] END exitcode=0 
+[Sun 09/07/2025  4:45:02.11] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:45:02+00:00
+[Sun 09/07/2025  4:45:03.94] END exitcode=0 
+[Sun 09/07/2025  4:50:02.09] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:50:02+00:00
+[Sun 09/07/2025  4:51:09.99] END exitcode=0 
+[Sun 09/07/2025  4:55:02.11] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T08:55:02+00:00
+[Sun 09/07/2025  4:55:14.97] END exitcode=0 
+[Sun 09/07/2025  5:00:02.10] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:00:02+00:00
+[Sun 09/07/2025  5:00:04.34] END exitcode=0 
+[Sun 09/07/2025  5:05:02.13] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:05:02+00:00
+[Sun 09/07/2025  5:05:22.25] END exitcode=0 
+[Sun 09/07/2025  5:10:02.06] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:10:02+00:00
+[Sun 09/07/2025  5:10:04.06] END exitcode=0 
+[Sun 09/07/2025  5:15:02.11] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:15:02+00:00
+[Sun 09/07/2025  5:15:04.11] END exitcode=0 
+[Sun 09/07/2025  5:20:02.10] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:20:02+00:00
+[Sun 09/07/2025  5:20:04.42] END exitcode=0 
+[Sun 09/07/2025  5:25:02.16] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:25:02+00:00
+[Sun 09/07/2025  5:25:04.77] END exitcode=0 
+[Sun 09/07/2025  5:30:02.19] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:30:02+00:00
+[Sun 09/07/2025  5:30:04.43] END exitcode=0 
+[Sun 09/07/2025  5:35:02.22] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:35:02+00:00
+[Sun 09/07/2025  5:35:49.62] END exitcode=0 
+[Sun 09/07/2025  5:40:02.25] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:40:02+00:00
+[Sun 09/07/2025  5:40:04.14] END exitcode=0 
+[Sun 09/07/2025  5:45:02.08] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:45:02+00:00
+[Sun 09/07/2025  5:45:03.94] END exitcode=0 
+[Sun 09/07/2025  5:50:02.15] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:50:02+00:00
+[Sun 09/07/2025  5:50:03.97] END exitcode=0 
+[Sun 09/07/2025  5:55:02.12] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T09:55:02+00:00
+[Sun 09/07/2025  5:55:14.42] END exitcode=0 
+[Sun 09/07/2025  6:00:02.29] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:00:02+00:00
+[Sun 09/07/2025  6:00:21.52] END exitcode=0 
+[Sun 09/07/2025  6:05:02.26] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:05:02+00:00
+[Sun 09/07/2025  6:05:04.36] END exitcode=0 
+[Sun 09/07/2025  6:10:02.21] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:10:02+00:00
+[Sun 09/07/2025  6:10:04.66] END exitcode=0 
+[Sun 09/07/2025  6:15:02.20] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:15:02+00:00
+[Sun 09/07/2025  6:15:04.23] END exitcode=0 
+[Sun 09/07/2025  6:20:02.22] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:20:02+00:00
+[Sun 09/07/2025  6:20:04.05] END exitcode=0 
+[Sun 09/07/2025  6:25:02.20] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:25:02+00:00
+[Sun 09/07/2025  6:25:04.72] END exitcode=0 
+[Sun 09/07/2025  6:30:02.25] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:30:02+00:00
+[Sun 09/07/2025  6:30:14.15] END exitcode=0 
+[Sun 09/07/2025  6:35:02.16] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:35:02+00:00
+[Sun 09/07/2025  6:35:04.04] END exitcode=0 
+[Sun 09/07/2025  6:40:02.12] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:40:02+00:00
+[Sun 09/07/2025  6:40:03.75] END exitcode=0 
+[Sun 09/07/2025  6:45:02.23] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:45:02+00:00
+[Sun 09/07/2025  6:45:04.49] END exitcode=0 
+[Sun 09/07/2025  6:50:02.36] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:50:02+00:00
+[Sun 09/07/2025  6:50:04.42] END exitcode=0 
+[Sun 09/07/2025  6:55:02.27] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T10:55:02+00:00
+[Sun 09/07/2025  6:55:04.27] END exitcode=0 
+[Sun 09/07/2025  7:00:02.31] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:00:02+00:00
+[Sun 09/07/2025  7:00:49.28] END exitcode=0 
+[Sun 09/07/2025  7:05:02.32] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:05:02+00:00
+[Sun 09/07/2025  7:05:04.92] END exitcode=0 
+[Sun 09/07/2025  7:10:02.22] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:10:02+00:00
+[Sun 09/07/2025  7:10:30.68] END exitcode=0 
+[Sun 09/07/2025  7:15:02.25] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:15:02+00:00
+[Sun 09/07/2025  7:15:04.43] END exitcode=0 
+[Sun 09/07/2025  7:20:02.28] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:20:02+00:00
+[Sun 09/07/2025  7:20:22.82] END exitcode=0 
+[Sun 09/07/2025  7:25:02.30] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:25:02+00:00
+[Sun 09/07/2025  7:25:14.35] END exitcode=0 
+[Sun 09/07/2025  7:30:02.32] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:30:02+00:00
+[Sun 09/07/2025  7:30:07.59] END exitcode=0 
+[Sun 09/07/2025  7:35:02.33] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:35:02+00:00
+[Sun 09/07/2025  7:35:22.78] END exitcode=0 
+[Sun 09/07/2025  7:40:02.31] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:40:02+00:00
+[Sun 09/07/2025  7:40:14.78] END exitcode=0 
+[Sun 09/07/2025  7:45:02.34] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:45:02+00:00
+[Sun 09/07/2025  7:45:04.67] END exitcode=0 
+[Sun 09/07/2025  7:50:02.34] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:50:02+00:00
+[Sun 09/07/2025  7:50:14.58] END exitcode=0 
+[Sun 09/07/2025  7:55:02.39] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T11:55:02+00:00
+[Sun 09/07/2025  7:55:04.46] END exitcode=0 
+[Sun 09/07/2025  8:00:02.43] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:00:02+00:00
+[Sun 09/07/2025  8:00:14.71] END exitcode=0 
+[Sun 09/07/2025  8:05:02.39] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:05:02+00:00
+[Sun 09/07/2025  8:05:04.91] END exitcode=0 
+[Sun 09/07/2025  8:10:02.33] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:10:02+00:00
+[Sun 09/07/2025  8:10:04.41] END exitcode=0 
+[Sun 09/07/2025  8:15:02.39] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:15:02+00:00
+[Sun 09/07/2025  8:15:14.41] END exitcode=0 
+[Sun 09/07/2025  8:20:02.41] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:20:02+00:00
+[Sun 09/07/2025  8:20:23.11] END exitcode=0 
+[Sun 09/07/2025  8:25:02.37] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:25:02+00:00
+[Sun 09/07/2025  8:25:14.55] END exitcode=0 
+[Sun 09/07/2025  8:30:02.37] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:30:02+00:00
+[Sun 09/07/2025  8:30:31.01] END exitcode=0 
+[Sun 09/07/2025  8:35:02.53] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:35:02+00:00
+[Sun 09/07/2025  8:35:04.32] END exitcode=0 
+[Sun 09/07/2025  8:40:02.41] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:40:02+00:00
+[Sun 09/07/2025  8:40:14.69] END exitcode=0 
+[Sun 09/07/2025  8:45:02.47] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:45:02+00:00
+[Sun 09/07/2025  8:45:04.30] END exitcode=0 
+[Sun 09/07/2025  8:50:02.02] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:50:02+00:00
+[Sun 09/07/2025  8:50:15.16] END exitcode=0 
+[Sun 09/07/2025  8:55:02.49] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T12:55:02+00:00
+[Sun 09/07/2025  8:55:49.35] END exitcode=0 
+[Sun 09/07/2025  9:00:02.46] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:00:02+00:00
+[Sun 09/07/2025  9:00:04.87] END exitcode=0 
+[Sun 09/07/2025  9:05:02.39] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:05:02+00:00
+[Sun 09/07/2025  9:05:41.34] END exitcode=0 
+[Sun 09/07/2025  9:10:02.46] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:10:02+00:00
+[Sun 09/07/2025  9:10:04.15] END exitcode=0 
+[Sun 09/07/2025  9:15:02.48] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:15:03+00:00
+[Sun 09/07/2025  9:15:04.74] END exitcode=0 
+[Sun 09/07/2025  9:20:02.76] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:20:03+00:00
+[Sun 09/07/2025  9:20:04.93] END exitcode=0 
+[Sun 09/07/2025  9:25:02.51] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:25:03+00:00
+[Sun 09/07/2025  9:25:04.89] END exitcode=0 
+[Sun 09/07/2025  9:30:02.59] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:30:03+00:00
+[Sun 09/07/2025  9:30:23.07] END exitcode=0 
+[Sun 09/07/2025  9:35:02.54] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:35:03+00:00
+[Sun 09/07/2025  9:35:15.00] END exitcode=0 
+[Sun 09/07/2025  9:40:02.50] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:40:03+00:00
+[Sun 09/07/2025  9:40:15.02] END exitcode=0 
+[Sun 09/07/2025  9:45:02.46] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:45:02+00:00
+[Sun 09/07/2025  9:45:04.45] END exitcode=0 
+[Sun 09/07/2025  9:50:02.52] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:50:03+00:00
+[Sun 09/07/2025  9:50:04.84] END exitcode=0 
+[Sun 09/07/2025  9:55:02.46] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T13:55:02+00:00
+[Sun 09/07/2025  9:55:04.52] END exitcode=0 
+[Sun 09/07/2025 10:00:02.56] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:00:03+00:00
+[Sun 09/07/2025 10:00:04.76] END exitcode=0 
+[Sun 09/07/2025 10:05:02.54] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:05:03+00:00
+[Sun 09/07/2025 10:05:04.57] END exitcode=0 
+[Sun 09/07/2025 10:10:02.55] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:10:03+00:00
+[Sun 09/07/2025 10:10:22.73] END exitcode=0 
+[Sun 09/07/2025 10:15:02.61] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:15:03+00:00
+[Sun 09/07/2025 10:15:05.16] END exitcode=0 
+[Sun 09/07/2025 10:20:02.39] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:20:02+00:00
+[Sun 09/07/2025 10:20:03.95] END exitcode=0 
+[Sun 09/07/2025 10:25:02.56] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:25:03+00:00
+[Sun 09/07/2025 10:25:15.21] END exitcode=0 
+[Sun 09/07/2025 10:30:02.51] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:30:03+00:00
+[Sun 09/07/2025 10:30:14.86] END exitcode=0 
+[Sun 09/07/2025 10:35:02.61] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:35:03+00:00
+[Sun 09/07/2025 10:35:04.69] END exitcode=0 
+[Sun 09/07/2025 10:40:02.66] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:40:03+00:00
+[Sun 09/07/2025 10:40:04.77] END exitcode=0 
+[Sun 09/07/2025 10:45:02.44] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:45:02+00:00
+[Sun 09/07/2025 10:45:04.23] END exitcode=0 
+[Sun 09/07/2025 10:50:02.60] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:50:03+00:00
+[Sun 09/07/2025 10:50:04.86] END exitcode=0 
+[Sun 09/07/2025 10:55:02.53] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T14:55:02+00:00
+[Sun 09/07/2025 10:55:04.80] END exitcode=0 
+[Sun 09/07/2025 11:00:02.62] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:00:03+00:00
+[Sun 09/07/2025 11:00:14.87] END exitcode=0 
+[Sun 09/07/2025 11:05:02.61] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:05:03+00:00
+[Sun 09/07/2025 11:05:04.75] END exitcode=0 
+[Sun 09/07/2025 11:10:02.83] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:10:03+00:00
+[Sun 09/07/2025 11:10:31.10] END exitcode=0 
+[Sun 09/07/2025 11:15:02.67] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:15:03+00:00
+[Sun 09/07/2025 11:15:23.06] END exitcode=0 
+[Sun 09/07/2025 11:20:02.65] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:20:03+00:00
+[Sun 09/07/2025 11:20:05.03] END exitcode=0 
+[Sun 09/07/2025 11:25:02.57] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:25:03+00:00
+[Sun 09/07/2025 11:25:14.84] END exitcode=0 
+[Sun 09/07/2025 11:30:02.72] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:30:03+00:00
+[Sun 09/07/2025 11:30:14.92] END exitcode=0 
+[Sun 09/07/2025 11:35:02.32] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:35:02+00:00
+[Sun 09/07/2025 11:35:04.45] END exitcode=0 
+[Sun 09/07/2025 11:40:02.53] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:40:02+00:00
+[Sun 09/07/2025 11:40:04.31] END exitcode=0 
+[Sun 09/07/2025 11:45:02.76] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:45:03+00:00
+[Sun 09/07/2025 11:45:05.59] END exitcode=0 
+[Sun 09/07/2025 11:50:02.61] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:50:03+00:00
+[Sun 09/07/2025 11:50:05.25] END exitcode=0 
+[Sun 09/07/2025 11:55:02.75] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T15:55:03+00:00
+[Sun 09/07/2025 11:55:23.16] END exitcode=0 
+[Sun 09/07/2025 12:00:02.65] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:00:03+00:00
+[Sun 09/07/2025 12:02:03.28] END exitcode=0 
+[Sun 09/07/2025 12:05:02.76] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:05:03+00:00
+[Sun 09/07/2025 12:05:05.10] END exitcode=0 
+[Sun 09/07/2025 12:10:02.72] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:10:03+00:00
+[Sun 09/07/2025 12:10:05.03] END exitcode=0 
+[Sun 09/07/2025 12:15:02.78] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:15:03+00:00
+[Sun 09/07/2025 12:15:05.60] END exitcode=0 
+[Sun 09/07/2025 12:20:02.76] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:20:03+00:00
+[Sun 09/07/2025 12:20:05.72] END exitcode=0 
+[Sun 09/07/2025 12:25:02.72] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:25:03+00:00
+[Sun 09/07/2025 12:25:05.48] END exitcode=0 
+[Sun 09/07/2025 12:30:01.84] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:30:02+00:00
+[Sun 09/07/2025 12:30:04.37] END exitcode=0 
+[Sun 09/07/2025 12:35:01.82] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:35:02+00:00
+[Sun 09/07/2025 12:35:22.56] END exitcode=0 
+[Sun 09/07/2025 12:40:01.58] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:40:01+00:00
+[Sun 09/07/2025 12:40:03.50] END exitcode=0 
+[Sun 09/07/2025 12:45:01.88] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:45:02+00:00
+[Sun 09/07/2025 12:45:22.53] END exitcode=0 
+[Sun 09/07/2025 12:50:01.82] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:50:02+00:00
+[Sun 09/07/2025 12:50:22.47] END exitcode=0 
+[Sun 09/07/2025 12:55:01.84] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T16:55:02+00:00
+[Sun 09/07/2025 12:55:14.14] END exitcode=0 
+[Sun 09/07/2025 13:00:01.70] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:00:02+00:00
+[Sun 09/07/2025 13:00:22.15] END exitcode=0 
+[Sun 09/07/2025 13:05:01.92] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:05:02+00:00
+[Sun 09/07/2025 13:05:09.25] END exitcode=0 
+[Sun 09/07/2025 13:10:01.92] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:10:02+00:00
+[Sun 09/07/2025 13:10:04.61] END exitcode=0 
+[Sun 09/07/2025 13:15:01.79] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:15:02+00:00
+[Sun 09/07/2025 13:15:40.74] END exitcode=0 
+[Sun 09/07/2025 13:20:01.90] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:20:02+00:00
+[Sun 09/07/2025 13:20:04.24] END exitcode=0 
+[Sun 09/07/2025 13:25:01.92] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:25:02+00:00
+[Sun 09/07/2025 13:25:04.41] END exitcode=0 
+[Sun 09/07/2025 13:30:01.91] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:30:02+00:00
+[Sun 09/07/2025 13:30:04.86] END exitcode=0 
+[Sun 09/07/2025 13:35:01.97] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:35:02+00:00
+[Sun 09/07/2025 13:35:04.51] END exitcode=0 
+[Sun 09/07/2025 13:40:01.96] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:40:02+00:00
+[Sun 09/07/2025 13:40:04.01] END exitcode=0 
+[Sun 09/07/2025 13:45:01.96] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:45:02+00:00
+[Sun 09/07/2025 13:45:04.05] END exitcode=0 
+[Sun 09/07/2025 13:50:02.04] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:50:02+00:00
+[Sun 09/07/2025 13:50:04.22] END exitcode=0 
+[Sun 09/07/2025 13:55:02.02] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T17:55:02+00:00
+[Sun 09/07/2025 13:55:04.63] END exitcode=0 
+[Sun 09/07/2025 14:00:01.97] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:00:02+00:00
+[Sun 09/07/2025 14:00:04.23] END exitcode=0 
+[Sun 09/07/2025 14:05:02.07] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:05:02+00:00
+[Sun 09/07/2025 14:05:04.55] END exitcode=0 
+[Sun 09/07/2025 14:10:02.02] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:10:02+00:00
+[Sun 09/07/2025 14:10:04.04] END exitcode=0 
+[Sun 09/07/2025 14:15:02.06] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:15:02+00:00
+[Sun 09/07/2025 14:15:04.10] END exitcode=0 
+[Sun 09/07/2025 14:20:02.02] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:20:02+00:00
+[Sun 09/07/2025 14:20:10.96] END exitcode=0 
+[Sun 09/07/2025 14:25:02.01] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:25:02+00:00
+[Sun 09/07/2025 14:25:03.77] END exitcode=0 
+[Sun 09/07/2025 14:30:01.99] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:30:02+00:00
+[Sun 09/07/2025 14:30:03.75] END exitcode=0 
+[Sun 09/07/2025 14:35:02.06] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:35:02+00:00
+[Sun 09/07/2025 14:35:20.38] END exitcode=0 
+[Sun 09/07/2025 14:40:02.09] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:40:02+00:00
+[Sun 09/07/2025 14:40:04.34] END exitcode=0 
+[Sun 09/07/2025 14:45:02.07] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:45:02+00:00
+[Sun 09/07/2025 14:45:03.98] END exitcode=0 
+[Sun 09/07/2025 14:50:02.07] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:50:02+00:00
+[Sun 09/07/2025 14:50:04.33] END exitcode=0 
+[Sun 09/07/2025 14:55:02.11] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T18:55:02+00:00
+[Sun 09/07/2025 14:55:04.99] END exitcode=0 
+[Sun 09/07/2025 15:00:01.94] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T19:00:02+00:00
+[Sun 09/07/2025 15:00:03.77] END exitcode=0 
+[Sun 09/07/2025 15:05:02.04] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T19:05:02+00:00
+[Sun 09/07/2025 15:05:04.55] END exitcode=0 
+[Sun 09/07/2025 15:10:01.95] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=156 alerts=0 511=0 snapshot=1 @ 2025-09-07T19:10:02+00:00
+[Sun 09/07/2025 15:10:03.68] END exitcode=0 
+[Sun 09/07/2025 15:15:01.81] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=0 alerts=0 511=0 snapshot=1 @ 2025-09-07T19:15:02+00:00
+[Sun 09/07/2025 15:15:40.51] END exitcode=0 
+[Sun 09/07/2025 15:20:01.91] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=0 alerts=0 511=0 snapshot=1 @ 2025-09-07T19:20:02+00:00
+[Sun 09/07/2025 15:20:39.89] END exitcode=0 
+[Sun 09/07/2025 15:25:01.93] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=0 alerts=0 511=0 snapshot=1 @ 2025-09-07T19:25:02+00:00
+[Sun 09/07/2025 15:25:40.00] END exitcode=0 
+[Sun 09/07/2025 15:30:01.88] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=0 alerts=0 511=0 snapshot=1 @ 2025-09-07T19:30:02+00:00
+[Sun 09/07/2025 15:30:39.76] END exitcode=0 
+[Sun 09/07/2025 15:35:02.17] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=0 alerts=0 511=0 snapshot=1 @ 2025-09-07T19:35:02+00:00
+[Sun 09/07/2025 15:35:40.40] END exitcode=0 
+[Sun 09/07/2025 15:40:01.85] START 
+Data directory: C:\Users\khang\Desktop\SchooolFiles\extracurricular\2025-2026\AiPresidentialChallange\TrainingModel\data\live_logs
+Saved: hourly=0 alerts=0 511=0 snapshot=1 @ 2025-09-07T19:40:02+00:00
+[Sun 09/07/2025 15:40:39.90] END exitcode=0 
