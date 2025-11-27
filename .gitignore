@@ -1,7 +1,52 @@
-data/live_logs/
-logs/
-*.csv
-!data/sample/**
-models/*.pkl
-outputs/*
+# OS / editor
+.DS_Store
+
+# Python / cache
+__pycache__/
+*.py[cod]
+.python-version
+
+# Environments / secrets
+.venv/
 .env
+.env.*
+
+# Logs / checkpoints / artifacts
+logs/
+lightning_logs/**
+outputs/**
+backups/**
+tft/artifacts/**
+models/*.pkl
+
+# Data directories and exports (protect raw/large files)
+data/**
+!data/sample/**            # allow tiny, intentional samples only
+scripts/tmp/**
+tmcs_*.txt
+
+# Large/sensitive formats anywhere
+*.csv
+*.parquet
+*.pq
+*.feather
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.joblib
+*.npz
+
+# Known DOT/GRITS/NPMRDS data names
+**/*GRITS*
+**/*NPMRDS*
+**/*MDD*
+**/*CrashData*
+**/*Traffic_Counts*
+**/*GA_2024*
+**/*GDOT*
+
+# Bytecode / cache
+scripts/__pycache__/
+tft/__pycache__/
