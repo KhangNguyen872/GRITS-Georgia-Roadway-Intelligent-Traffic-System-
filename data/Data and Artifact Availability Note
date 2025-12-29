@@ -1,2 +1,4 @@
 ### Data and Artifact Availability Note ###
-Raw traffic datasets and trained model artifacts used in this project are not included in this repository due to government data access and usage restrictions. The code is provided for transparency and methodological reference only. All results presented in the submission were generated using authorized access to public-sector transportation data.
+Raw traffic datasets and trained model artifacts used in this project are not included in this repository due to government data access and usage restrictions. 
+The code is provided for transparency and methodological reference only. 
+All results presented in the submission were generated using authorized access to public-sector transportation data.
