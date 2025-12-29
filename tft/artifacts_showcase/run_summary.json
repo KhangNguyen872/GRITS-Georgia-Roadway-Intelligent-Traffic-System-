@@ -1,0 +1,17 @@
+{
+  "route_tmcs_count": 65,
+  "total_route_miles": 38.746143000000004,
+  "date_range": [
+    "2025-07-22 20:00:00-04",
+    "2025-11-23 18:55:00-05"
+  ],
+  "horizons": [
+    5,
+    15,
+    30,
+    60
+  ],
+  "freq_minutes": 5,
+  "epochs_run": 20,
+  "final_val_mae": null
+}

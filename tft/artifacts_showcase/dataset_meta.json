@@ -1,0 +1,27 @@
+{
+  "config": {
+    "npmrds_path": "TrainingModel/data/Govt_Data/npmrds_showcase_5min.parquet",
+    "incidents_csv": "__NO_INCIDENTS__",
+    "freq": "5min",
+    "horizons": [
+      5,
+      15,
+      30,
+      60
+    ],
+    "seed": 42,
+    "output_path": "TrainingModel/tft/artifacts_showcase/dataset.parquet",
+    "meta_path": "TrainingModel/tft/artifacts_showcase/dataset_meta.json",
+    "min_confidence": 0.0
+  },
+  "horizons": [
+    5,
+    15,
+    30,
+    60
+  ],
+  "cutoff_time": "2025-10-29T17:35:00+00:00",
+  "num_rows": 2304311,
+  "num_tmcs": 65,
+  "freq_minutes": 5
+}
